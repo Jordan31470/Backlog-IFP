@@ -14,6 +14,6 @@ public class Main {
         News news = new News("toto","tototata",new Date(1212580300),1);
         NewsDAO newsDAO1 = new NewsDAO();
         newsDAO1.insert(news);
-
+        //reprise commit
     }
 }
