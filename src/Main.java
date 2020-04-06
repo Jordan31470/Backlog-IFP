@@ -1,4 +1,5 @@
 import Domaine.News;
+import Dto.DtoNewsReporter;
 import Persistence.NewsDAO;
 import Persistence.ReporterDAO;
 
@@ -15,5 +16,7 @@ public class Main {
         NewsDAO newsDAO1 = new NewsDAO();
         newsDAO1.insert(news);
         //reprise commit
+        DtoNewsReporter dtoNewsReporter =
+
     }
 }
