@@ -8,7 +8,7 @@ import Dto.DtoNewsReporter;
 
 public class NewsDAO {
 
-    public void read(int id) throws SQLException, ClassNotFoundException {
+    public DtoNew read(int id) throws SQLException, ClassNotFoundException {
         DtoNew news = new DtoNew();
         ConnectDB connectDB = new ConnectDB();
         Connection cx = connectDB.connection();
@@ -35,6 +35,7 @@ public class NewsDAO {
 
         }
         cx.close();
+        return news;
 
 
     }

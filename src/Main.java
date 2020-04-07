@@ -5,6 +5,7 @@ import Persistence.ReporterDAO;
 
 import java.sql.Date;
 import java.sql.SQLException;
+import java.util.concurrent.SynchronousQueue;
 
 public class Main {
     public  static void main(String[] args) throws SQLException, ClassNotFoundException{
@@ -16,7 +17,9 @@ public class Main {
         NewsDAO newsDAO1 = new NewsDAO();
         newsDAO1.insert(news);
         //reprise commit
-        DtoNewsReporter dtoNewsReporter =
+        DtoNewsReporter dtoNewsReporter = new DtoNewsReporter();
+
+        System.out.println("Titre :" + dtoNewsReporter.getTitre());
 
     }
 }
